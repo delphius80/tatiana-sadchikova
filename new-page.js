@@ -1,0 +1,1 @@
+document.addEventListener('click',function(event){const button=event.target.closest('.t668__trigger-button');if(!button)return;const content=document.getElementById(button.getAttribute('aria-controls'));if(!content)return;const opened=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!opened));content.hidden=opened;});
